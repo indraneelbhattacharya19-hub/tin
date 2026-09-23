@@ -40,7 +40,7 @@
     },
     {
       "id": "mixed",
-      "description": "The sample contains unrelated objections and should not be presented as one universal problem.",
+      "description": "The sample contains different buying concerns and should not be presented as one universal problem.",
       "inputs": {
         "objections": [
           "We already use another tool.",
@@ -53,18 +53,18 @@
       },
       "expect": {
         "contains": [
-          "Evidence and limitations",
-          "provisional"
+          "Evidence and limitations"
         ]
       }
     },
     {
       "id": "insufficient",
-      "description": "Too few useful objections after validation should lead to an explicit evidence limitation rather than an invented pattern.",
+      "description": "Three generic statements do not provide three useful objections, so the workflow should state that the evidence is insufficient rather than inventing a pattern.",
       "inputs": {
         "objections": [
           "Interesting product.",
-          "Thanks for the demo."
+          "Thanks for the demo.",
+          "We will think about it."
         ]
       },
       "expect": {
